@@ -1,0 +1,32 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Multilingual Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <h1 id="appTitle">Weather App</h1>
+
+    <label id="enterCityLabel" for="cityInput">Enter city</label>
+    <input type="text" id="cityInput" placeholder="e.g. London">
+
+    <label for="languageSelector">Language</label>
+    <select id="languageSelector">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="kn">ಕನ್ನಡ</option>
+    </select>
+
+    <button id="getWeatherBtn">Get Weather</button>
+
+    <div id="weatherOutput">
+        <p><strong id="temperatureLabel">Temperature:</strong> <span id="tempVal">--</span></p>
+        <p><strong id="humidityLabel">Humidity:</strong> <span id="humidityVal">--</span></p>
+        <p><strong id="windLabel">Wind Speed:</strong> <span id="windVal">--</span></p>
+        <p><strong id="descriptionLabel">Weather Description:</strong> <span id="descVal">--</span></p>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+    </html>

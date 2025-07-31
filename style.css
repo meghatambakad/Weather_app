@@ -1,0 +1,93 @@
+/* ==== Base Reset ==== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1501973801540-537f08ccae7d') no-repeat center center fixed;
+  background-size: cover;
+  color: #5a6389;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+ 
+  background: url('https://imgcdn.stablediffusionweb.com/2024/3/19/49925953-5f53-4394-9e6a-52b3759cebc4.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 2; /* Makes the entire body (including text) transparent */
+
+}
+
+/* ==== Frosted Glass Container ==== */
+#weatherOutput, 
+input, 
+select, 
+button {
+  backdrop-filter: blur(10px);
+  background-color: rgb(34, 132, 177);
+  border: 1px solid rgba(125, 167, 181, 0.692);
+  border-radius: 10px;
+  padding: 0.75rem;
+  width: 300px;
+  margin: 0.5rem 0;
+  color: #fafcff;
+}   
+
+/* ==== App Title ==== */
+#appTitle {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px #131317f8;
+}
+
+/* ==== Labels ==== */
+label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+  color: #6565a2b5;
+  
+}
+
+/* ==== Inputs and Selectors ==== */
+input::placeholder {
+  color: #ccc;
+}
+
+/* ==== Button Style ==== */
+button {
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0077b6;
+}
+
+/* ==== Weather Output Section ==== */
+#weatherOutput {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+#weatherOutput p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+#weatherOutput strong {
+  color: #1f1e45;
+}
