@@ -46,7 +46,7 @@ document.getElementById("getWeatherBtn").addEventListener("click", () => {
   const city = document.getElementById("cityInput").value;
   const lang = document.getElementById("languageSelector").value;
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=${lang}&appid=1f4b734807df08dea218ee736459f024`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=${lang}&appid=your api id`)
     .then(res => res.json())
     .then(data => {
       document.getElementById("tempVal").textContent = `${data.main.temp} °C`;
